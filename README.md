@@ -15,11 +15,23 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	英睿达120G固态：macOS 10.15.5 --opencore引导
 	东芝2T机械硬盘：Windows PE（微PE.ISO） --UEFI引导
 
+引导工作情况：<br>
+------------
+	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问题与本人无关！
+	
+	蓝牙正常
+	有线网卡正常
+	独显正常
+	睡眠正常
+	
+	无核显（9400F）
+	WIFI未驱动（Intel无线网卡）
+	无三码，请自行添加，方法参考下面说明
+	
 config说明：<br>
 ------------
-此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问题与本人无关！<br>
 <br>
-	本config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：<br>
+	config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：<br>
 		01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat<br>
 		02、打开后按3回车，输入需要的机型。例如iMac19,1，注意字母大小写，逗号为英文状态下输入的<br>
 		03、使用ProperTree打开config，将生成的信息对应填入PlatformInfo--Generic下，对应关系如下：<br>
@@ -35,7 +47,3 @@ config说明：<br>
 	04、将Kernel--Quirks--XhciPortLimit改为 Ture  #开启USB端口限制，Mac主板限制USB端口数量，所以需要打开限制<br>
 	<br>
 注：开机后可自行定制USB，替换自己定制的USBPorts.kext，将上述4处修改为为相反属性即可。<br>
-<br>
-本人CPU为9400F，无核显，所以没有配置核显，会导致核显无法使用，需要使用核显的需自行解决。<br>
-<br>
-WIFI未驱动，蓝牙正常，有线网卡正常，独显正常、睡眠正常<br>
