@@ -29,7 +29,7 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	WIFI未驱动（Intel无线网卡）
 	无三码，请自行添加，方法参考下面说明
 	
-config说明：<br>
+三码替换说明：<br>
 ------------
 	config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：
 	01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat
@@ -39,8 +39,10 @@ config说明：<br>
 		SystemSerialNumber ----- Serial<br>
 		MLB -------------------- Board Serial<br>
 		SystemUUID ------------- SmUUID<br>
-<br>
-	USB已定制，因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
+	
+USB定制说明：<br>
+------------
+	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
 	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
 	02、将Kernel--Add--8目录的USBPorts.kext  |  Enabled属性改为 False  #关闭USB定制驱动
 	03、将Kernel--Add--8目录的USBPower.kext  |  Enabled属性改为 False  #关闭USB定制驱动依赖
