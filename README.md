@@ -17,7 +17,8 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 
 config说明：<br>
 ------------
-	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问题与本人无关！<br>
+	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、<br>
+	主板损坏等问题与本人无关！<br>
 <br>
 	本config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：<br>
 		01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat<br>
