@@ -1,0 +1,20 @@
+001、config里开启加载USBInjectAll.kext，（关闭USBPower.kext和USBPorts.kext，若没有则忽略）开启 USB 端口限制，位置在：Kernel--Quirks--XhciPortLimit，改为Ture
+
+002、添加-uia_exclude_ss参数，位置在NVRAW--Add--7C436110**--boot-args
+	备注：参数意思是屏蔽USB3.0，HS开头代表USB2.0，SS开头代表USB3.0
+
+003、重启电脑
+
+004、打开Hackintool，点击USB，再点击清空全部，再点刷新，见图01
+        这样我们看到的就是所有的 2.0 端口，用2.0 设备把自己需要用到的 2.0 插口都插拔一下，这样我们能看到被识别的端口会变成绿色，然后把不需要的端口（没有变成绿色的）都删掉，点下面一排减号是删除，删除以后我们别的就不要再去动，记住鼠标键盘的SUB端口号，
+
+005、删除我们先前添加的-uia_exclude_ss，重新添加uia_include=PRT5, PRT6 -uia_exclude_hs
+（屏蔽PRT5, PRT6这两个2.0以外的2.0端口，其中PRT5, PRT6是按照自己的填写，主要是键盘和鼠标端口，不然等会重启电脑后键盘鼠标不能用）
+
+006、修改了config后保存重启
+
+007、重启电脑后打开Hackintool，我们能看到之前识别的 2.0 和所有开放 3.0 端口，用3.0设备把需要的端口插拔识别一下，识别后的变成绿色，把不需要的删除！然后点导出，如图02（导出自动保存到桌面，点确认即可）
+
+008、一共有三个文件，我们OC用到的只有一个 USBPorts.kext，把这个驱动放到Kexts文件夹并加入 pilst 并开启（注意：USBPorts.kext 要配合 USBPower.kext使用），关闭 USBInjectAll.kext，删除之前添加的uia_include=PRT5, PRT6 -uia_exclude_hs
+
+009、开启 USB 端口限制，位置在：Kernel--Quirks--XhciPortLimit，改为False，保存重启即可

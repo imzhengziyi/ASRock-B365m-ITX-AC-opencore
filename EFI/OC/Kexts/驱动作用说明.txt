@@ -1,0 +1,21 @@
+Lilu.kext ——————————- 底层依赖
+
+Applealc.kext  ———————- 声卡驱动
+
+VirtualSMC.kext  —————— 传感器驱动依赖
+
+SMCProcessor.kext  —————- CPU核传感器
+
+SMCSuperIO.kext——————- IO传感器/同上             
+
+WhateverGreen.kext—————核显&显卡驱动
+
+IntelMausi.kext———————- Intel类千兆网卡驱动
+
+Usbinjectall.kext———————- USB驱动、也可以定制自己的USB补丁
+
+USBPorts.kext—————————USB定制驱动，正确定制后只使用本驱动，禁用上方的驱动
+
+USBPower.kext————————USBPorts.kext需要此驱动来配合使用
+
+BrcmBluetoothInjector.kext———博通蓝牙驱动
