@@ -29,6 +29,9 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	WIFI未驱动（Intel无线网卡）
 	无三码，请自行添加，方法参考下面说明
 	
+	使用GenSMBIOS和ProperTree请先安装python环境（仓库可下载）
+	GenSMBIOS：https://github.com/corpnewt/GenSMBIOS
+	ProperTree：https://github.com/corpnewt/ProperTree
 三码替换说明：<br>
 ------------
 	config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：
