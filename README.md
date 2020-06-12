@@ -17,8 +17,8 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 
 引导工作情况：<br>
 ------------
-	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问题与本
-	人无关！
+	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问
+	题与本人无关！
 	
 	蓝牙正常
 	有线网卡正常
@@ -42,8 +42,8 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	
 USB定制说明：<br>
 ------------
-	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的请自行
-	修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
+	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的
+	请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
 	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
 	02、将Kernel--Add--8目录的USBPorts.kext      |  Enabled属性改为 False #关闭USB定制驱动
 	03、将Kernel--Add--8目录的USBPower.kext      |  Enabled属性改为 False #关闭USB定制驱动依赖
