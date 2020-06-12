@@ -23,16 +23,17 @@ config说明：<br>
 		01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat<br>
 		02、打开后按3回车，输入需要的机型。例如iMac19,1，注意字母大小写，逗号为英文状态下输入的<br>
 		03、使用ProperTree打开config，将生成的信息对应填入PlatformInfo--Generic下，对应关系如下：<br>
-			SystemProductName ------ Type<br>
+		>>SystemProductName ------ Type<br>
 			SystemSerialNumber ----- Serial<br>
 			MLB -------------------- Board Serial<br>
 			SystemUUID ------------- SmUUID<br>
 <br>
 	USB已定制，因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：<br>
-	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
-	02、将Kernel--Add--8目录的USBPorts.kext  |  Enabled属性改为 False  #关闭USB定制驱动
-	03、将Kernel--Add--8目录的USBPower.kext  |  Enabled属性改为 False  #关闭USB定制驱动依赖
-	04、将Kernel--Quirks--XhciPortLimit改为 Ture  #开启USB端口限制，Mac主板限制USB端口数量，所以需要打开限制
+	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动<br>
+	02、将Kernel--Add--8目录的USBPorts.kext  |  Enabled属性改为 False  #关闭USB定制驱动<br>
+	03、将Kernel--Add--8目录的USBPower.kext  |  Enabled属性改为 False  #关闭USB定制驱动依赖<br>
+	04、将Kernel--Quirks--XhciPortLimit改为 Ture  #开启USB端口限制，Mac主板限制USB端口数量，所以需要打开限制<br>
+<br>
 注：开机后可自行定制USB，替换自己定制的USBPorts.kext，将上述4处修改为为相反属性即可。
 <br>
 本人CPU为9400F，无核显，所以没有配置核显，会导致核显无法使用，需要使用核显的需自行解决。<br>
