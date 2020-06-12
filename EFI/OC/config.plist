@@ -822,17 +822,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02005130QXLNV91H</string>
+			<string></string>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string></string>
 			<key>SystemSerialNumber</key>
-			<string>C02C6UY6JV3Q</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>AF88535F-C519-4E93-BA8E-CAA7A5BA3099</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
