@@ -47,5 +47,5 @@ USB定制说明：<br>
 	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
 	02、将Kernel--Add--8目录的USBPorts.kext      |  Enabled属性改为 False #关闭USB定制驱动
 	03、将Kernel--Add--8目录的USBPower.kext      |  Enabled属性改为 False #关闭USB定制驱动依赖
-	04、将Kernel--Quirks--XhciPortLimit          |             改为 Ture  #开启USB端口限制，Mac主板限制USB端口数量，所以需要打开限制
+	04、将Kernel--Quirks--XhciPortLimit          |             改为 Ture  #开启端口限制，Mac主板限制USB端口数量
 	注：开机后可自行定制USB，替换自己定制的USBPorts.kext，将上述4处修改为为相反属性即可
