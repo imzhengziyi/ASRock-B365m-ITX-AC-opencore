@@ -35,10 +35,10 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat
 	02、打开后按3回车，输入需要的机型。例如iMac19,1，注意字母大小写，逗号为英文状态下输入的
 	03、使用ProperTree打开config，将生成的信息对应填入PlatformInfo--Generic下，对应关系如下：
-		SystemProductName ------ Type<br>
-		SystemSerialNumber ----- Serial<br>
-		MLB -------------------- Board Serial<br>
-		SystemUUID ------------- SmUUID<br>
+		SystemProductName ------ Type
+		SystemSerialNumber ----- Serial
+		MLB -------------------- Board Serial
+		SystemUUID ------------- SmUUID
 	
 USB定制说明：<br>
 ------------
