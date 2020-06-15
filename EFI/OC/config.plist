@@ -8,15 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>AWAC时钟改RTC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>屏蔽EC</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>NVRAW修正补丁</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +24,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>解决无法睡眠、睡眠死机问题</string>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -372,6 +372,22 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>MacProMemoryNotificationDisabler.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/MacProMemoryNotificationDisabler</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -589,7 +605,7 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -757,7 +773,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 alcid=3</string>
+				<string>keepsyms=1 alcid=3 cardtype=ecardonly</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -822,17 +838,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>F5K950310CDK3F71M</string>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string></string>
+			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>F5KZT0E5P7QM</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>E32DAB5F-D383-4338-8AEB-18BCF2259A5D</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -882,6 +898,7 @@
 			<string>HFSPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenUsbKbDxe.efi</string>
+			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
