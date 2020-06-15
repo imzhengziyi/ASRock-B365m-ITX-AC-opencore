@@ -1,6 +1,6 @@
 B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 ===
-本人主机配置：
+主机配置：
 ------------
 	CPU：i5 9400F
 	主板：华擎B365M ITX/AC
@@ -25,18 +25,23 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	有线网卡正常
 	独显正常
 	睡眠正常
+	唤醒正常
+	原生电源管理正常
+	HEVC/H264双硬解正常
+	FaceTime/短信正常
 	
-	无核显（9400F）
+	无核显（9400F），config未配置核显
 	WIFI未驱动（Intel无线网卡）
-	无三码，请自行添加，方法参考下面说明
 	
-	使用GenSMBIOS和ProperTree请先安装python环境
-	打包下载：https://github.com/imzhengziyi/Hackintosh-tools
+	建议使用GenSMBIOS重新计算三码
+	config编辑工具和GenSMBIOS工具需要python环境，请先安装！
+	打包下载（含python）：https://github.com/imzhengziyi/Hackintosh-tools
 	GenSMBIOS官方库：https://github.com/corpnewt/GenSMBIOS
 	ProperTree官方库：https://github.com/corpnewt/ProperTree
+	
 三码替换说明：<br>
 ------------
-	config已删除我使用的iMac19.1三码，需要自己生成添加！方法如下：
+	
 	01、下载本仓库提供的 GenSMBIOS机型生成器，黑果和win均可运行，黑果下打开GenSMBIOS.command，win下打开GenSMBIOS.bat
 	02、打开后按3回车，输入需要的机型。例如iMac19,1，注意字母大小写，逗号为英文状态下输入的
 	03、使用ProperTree打开config，将生成的信息对应填入PlatformInfo--Generic下，对应关系如下：
@@ -47,10 +52,15 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	
 USB定制说明：<br>
 ------------
-	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，连接了一个绿联的USB3.0 HUB使用全部正常！需要使用前置USB接口的
+	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，使用全部正常！需要使用前置USB接口的
 	请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
 	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
 	02、将Kernel--Add--8目录的USBPorts.kext      |  Enabled属性改为 False #关闭USB定制驱动
 	03、将Kernel--Add--8目录的USBPower.kext      |  Enabled属性改为 False #关闭USB定制驱动依赖
 	04、将Kernel--Quirks--XhciPortLimit          |             改为 Ture  #开启端口限制，Mac主板限制USB端口数量
 	注：开机后可自行定制USB，替换自己定制的USBPorts.kext，将上述4处修改为为相反属性即可
+	
+主题说明：<br>
+------------
+	config已开启本人修改的官方主题，请往远景论坛查看
+	链接：http://bbs.pcbeta.com/viewthread-1860685-1-1.html
