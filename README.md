@@ -5,7 +5,7 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	CPU：i5 9400F
 	主板：华擎B365M ITX/AC
 	显卡：蓝宝石RX570 4G
-	WiFi蓝牙：主板自带
+	无线网卡：BCM94360CS2
 	硬盘：西数SN550nvme固态500G+英睿达120G固态+东芝2T机械硬盘
 	机箱：SGPC 傻瓜超人k99v2
 
@@ -21,7 +21,7 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏等问
 	题与本人无关！
 	
-	蓝牙正常
+	WiFi蓝牙正常
 	有线网卡正常
 	独显正常
 	睡眠正常
@@ -31,7 +31,6 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	FaceTime/短信正常
 	
 	无核显（9400F），config未配置核显
-	WIFI未驱动（Intel无线网卡）
 	
 	建议使用GenSMBIOS重新计算三码
 	config编辑工具和GenSMBIOS工具需要python环境，请先安装！
@@ -49,16 +48,6 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 		SystemSerialNumber ----- Serial
 		MLB -------------------- Board Serial
 		SystemUUID ------------- SmUUID
-	
-USB定制说明：<br>
-------------
-	因机箱无前置USB接口，所以只使用了主板背面的4个USB3.0接口，使用全部正常！需要使用前置USB接口的
-	请自行修改config来关闭USB定制，推荐使用ProperTree来修改，方法如下：
-	01、将Kernel--Add--7目录的USBInjectAll.kext  |  Enabled属性改为 Ture  #开启USB驱动
-	02、将Kernel--Add--8目录的USBPorts.kext      |  Enabled属性改为 False #关闭USB定制驱动
-	03、将Kernel--Add--8目录的USBPower.kext      |  Enabled属性改为 False #关闭USB定制驱动依赖
-	04、将Kernel--Quirks--XhciPortLimit          |             改为 Ture  #开启端口限制，Mac主板限制USB端口数量
-	注：开机后可自行定制USB，替换自己定制的USBPorts.kext，将上述4处修改为为相反属性即可
 	
 主题说明：<br>
 ------------
