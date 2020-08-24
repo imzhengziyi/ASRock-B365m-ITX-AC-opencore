@@ -6,15 +6,14 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	主板：华擎B365M ITX/AC
 	显卡：蓝宝石RX570 4G
 	无线网卡：BCM94360CS2
-	硬盘：西数SN550nvme固态500G+英睿达120G固态+东芝2T机械硬盘
+	硬盘：西数SN550nvme固态500G+英睿达120G固态
 	机箱：SGPC 傻瓜超人k99v2
 
 各硬盘系统分布：<br>
 ------------
 	nvme  固态500G：Windows 10 1809 --UEFI引导
 	英睿达120G固态：macOS 10.15.5 --opencore引导
-	东芝2T机械硬盘：Windows PE（微PE.ISO） --UEFI引导
-	OC正常引导3个系统，显示3个菜单Windows（PE）、Windows、MacOS
+	OC正常引导2个系统
 
 引导工作情况：<br>
 ------------
@@ -24,7 +23,7 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	WiFi蓝牙正常
 	有线网卡正常
 	独显正常
-	睡眠正常
+	睡眠正常(手动睡眠正常，无法自动睡眠，屏幕关闭后风扇还在工作)
 	唤醒正常
 	原生电源管理正常
 	HEVC/H264双硬解正常
