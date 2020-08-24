@@ -6,29 +6,31 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 	主板：华擎B365M ITX/AC
 	显卡：蓝宝石RX570 4G
 	无线网卡：BCM94360CS2
-	硬盘：西数SN550nvme固态500G+英睿达120G固态+东芝2T机械硬盘
+	硬盘：西数SN550nvme固态500G+英睿达120G固态
 	机箱：SGPC 傻瓜超人k99v2
 
 各硬盘系统分布：<br>
 ------------
 	nvme  固态500G：Windows 10 1809 --UEFI引导
 	英睿达120G固态：macOS 10.15.5 --opencore引导
-	东芝2T机械硬盘：Windows PE（微PE.ISO） --UEFI引导
-	OC正常引导3个系统，显示3个菜单Windows（PE）、Windows、MacOS
+	OC正常引导2个系统
 
 引导工作情况：<br>
 ------------
 	此config文件在我设备上正常使用，但不保证你可以直接使用，若因使用此config导致的第三次世界大战、宇宙射线增强、主板损坏
 	等问题与本人无关！
 	
+	注意：必须添加三码才可使用！！！！方法在下面！！！
+	
 	WiFi蓝牙正常
 	有线网卡正常
 	独显正常
-	睡眠正常
+	睡眠正常(手动睡眠正常，无法自动睡眠，屏幕关闭后风扇还在工作)
 	唤醒正常
 	原生电源管理正常
+	USB已定制，本人机箱无前面板USB，机型为MacPro7,1，修改机型请去掉USBPorts.kext，改用USBInjectAll.kext
 	HEVC/H264双硬解正常
-	FaceTime/短信正常
+	FaceTime/短信正常（自己添加三码，方法在下面）
 	
 	无核显（9400F），config未配置核显
 	
