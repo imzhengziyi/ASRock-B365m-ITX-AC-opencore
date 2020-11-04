@@ -166,8 +166,7 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -405,8 +404,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -421,8 +419,7 @@
 			<string></string>
 		</dict>
 		<key>Force</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -656,8 +653,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -884,7 +880,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K909310J9K3F7FB</string>
+			<string></string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>SystemMemoryStatus</key>
@@ -896,9 +892,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KYCMZCP7QM</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>64ED5EAA-DABC-4D1C-B90F-2AA233D7B2C0</string>
+			<string></string>
 		</dict>
 		<key>Memory</key>
 		<dict>
@@ -916,225 +912,6 @@
 			<integer>26</integer>
 			<key>TypeDetail</key>
 			<integer>128</integer>
-			<key>Devices</key>
-			<array>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 8 (Channel A / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>2048</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 7 (Channel A / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 10 (Channel B / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>E11A2CD7</string>
-					<key>Size</key>
-					<integer>2048</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 9 (Channel B / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>E11A2CD8</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 12 (Channel C / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 11 (Channel C / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>E11A2CD9</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 5 (Channel D / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>2048</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 6 (Channel D / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>E11A2CDA</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 3 (Channel E / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>2048</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 4 (Channel E / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 1 (Channel F / DIMM 1)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>CT8G4SFS8266.C8FD1</string>
-					<key>SerialNumber</key>
-					<string>E11A2CDB</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string></string>
-					<key>DeviceLocator</key>
-					<string>Slot 2 (Channel F / DIMM 2)</string>
-					<key>Manufacturer</key>
-					<string>Micron</string>
-					<key>PartNumber</key>
-					<string>8ATF1G64HZ-2G6H1</string>
-					<key>SerialNumber</key>
-					<string>00000000</string>
-					<key>Size</key>
-					<integer>1024</integer>
-					<key>Speed</key>
-					<integer>2666</integer>
-				</dict>
-			</array>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
