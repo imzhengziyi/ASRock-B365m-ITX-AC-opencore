@@ -2,7 +2,7 @@ B365ITX-Hackintosh-OC 华擎B365ITX OC配置
 
 主机配置：
 ------------------------	
-CPU：i5 9400F
+CPU：i5 9400F</br>
 主板：华擎B365M ITX/AC
 显卡：蓝宝石RX570 4G
 无线网卡：BCM94360CS2
